@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="贪财好色，一生正气"><title>创建一个web本地服务器 | blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">创建一个web本地服务器</h1><a id="logo" href="/.">blog</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/guestbook/"><i class="fa fa-pencil-square-o"> 留言</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-5"><div class="content_container"><div class="post"><h1 class="post-title">创建一个web本地服务器</h1><div class="post-meta">Jul 6, 2018<span> | </span><span class="category"><a href="/categories/服务器/">服务器</a></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 159</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 1</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" href="/2018/07/06/创建一个web本地服务器/#vcomment"><span class="valine-comment-count" data-xid="/2018/07/06/创建一个web本地服务器/"></span><span> 条评论</span></a><div class="post-content"><p>快速创建node.js本地web服务器，用于调试</p>
+<a id="more"></a>
+<h2 id="初始条件"><a href="#初始条件" class="headerlink" title="初始条件"></a>初始条件</h2><ol>
+<li>全局安装 node</li>
+<li>全局安装 http-server</li>
+</ol>
+<h2 id="启动使用"><a href="#启动使用" class="headerlink" title="启动使用"></a>启动使用</h2><ol>
+<li>mkdir http-server</li>
+<li>cd http-server</li>
+<li>http-server</li>
+</ol>
+<blockquote>
+<p>运行结果为 http-server -a 192.168.xxx.xxx -p 7070</p>
+</blockquote>
+<h2 id="参数以及设置"><a href="#参数以及设置" class="headerlink" title="参数以及设置"></a>参数以及设置</h2><p>http-server 参数说明</p>
+<ul>
+<li>-p 端口号 （默认8080）</li>
+<li>-a IP地址</li>
+<li>-d 显示目录列表（默认ture）</li>
+<li>-s 日志信息输出</li>
+<li>-o 开始服务后打开浏览器</li>
+<li>-u 或—utc在日志消息中使用UTC时间格式。</li>
+</ul>
+<h2 id="我的使用"><a href="#我的使用" class="headerlink" title="我的使用"></a>我的使用</h2><blockquote>
+<p>文件夹放在收藏栏，vue编译结束拖到文件夹就可以跑起来查看效果</p>
+</blockquote>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1ft09c8z0arj31140gkmzy.jpg" alt=""></p>
+</div><div class="tags"><a href="/tags/本地服务器/">本地服务器</a></div><div class="post-nav"><a class="pre" href="/2018/07/11/如果人生重来/">如果人生重来</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'5UrTltvIKg70hE3USSGrmoxz-gzGzoHsz',
+  appKey:'7IY9dIslVfcLU6ggAnS3VJu8',
+  placeholder:'Just so so',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-5 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-open-o"></i><span class="pdlf8">分类</span></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/服务器/">服务器</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-flag-o"></i><span class="pdlf8">标签</span></div><div class="tagcloud"><a href="/tags/本地服务器/" style="font-size: 15px;">本地服务器</a> <a href="/tags/生活感悟/" style="font-size: 15px;">生活感悟</a> <a href="/tags/如何学习/" style="font-size: 15px;">如何学习</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-lemon-o"></i><span class="pdlf8">最近文章</span></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/27/如何决定未来/">如何决定未来</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/17/有情人终成眷属/">有情人终成眷属</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/02/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/19/读书笔记：《好好学习》/">读书笔记：《好好学习》</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/11/如果人生重来/">如果人生重来</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/06/创建一个web本地服务器/">创建一个web本地服务器</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-hand-paper-o"></i><span class="pdlf8">友情链接</span></div></div></div></div><div class="pure-u-1 pure-u-md-4-5"></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
